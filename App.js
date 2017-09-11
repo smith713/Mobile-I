@@ -4,7 +4,7 @@ import {
   Text, 
   View, 
   Image, 
-  TouchableHighlight 
+  TouchableHighlight, 
 } from 'react-native';
 
 export default class App extends React.Component {
@@ -17,7 +17,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <View style={styles.container}>
           <Text style={{marginTop: 30, fontSize: 30}}>Jordan V: Cement</Text>
-            <Image style={{width: 350, height: 350}}
+            <Image style={styles.topImage}
               source={{url: 'https://cdn5.kicksonfire.com/wp-content/uploads/2017/06/Air-Jordan-5-White-Cement-1-2-681x474.jpg?x77385'}}
             />
             <View style={{flex: 1, flexDirection: 'row'}}>
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: -500,
+    marginTop: -270,
   },
   comments: {
     width: 330,
@@ -87,5 +87,9 @@ const styles = StyleSheet.create({
     padding: 1,
     alignItems: 'baseline',
     justifyContent: 'center',
+  },
+  topImage: {
+    height: 400,
+    alignSelf: 'stretch'
   }
 });
